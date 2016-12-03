@@ -65,5 +65,16 @@ public class Header extends Node {
 		
 	}
 	
+	public Token createToken()
+	{
+		
+		if(content.contains("*"))// header 안에 list가 있을 경우는 없으니까
+			return new Emphasis(content);
+		else 
+			return new PlainText(content);// 아무 것도 해당 사항 없으면 plain text이다
+		
+
+	}
+	
 	
 }
