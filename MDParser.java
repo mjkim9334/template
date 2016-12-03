@@ -35,7 +35,7 @@ public class MDParser {
 			    {
 			    	while(mode=="Header")
 			    	{
-			    		line.concat(sentence); // µÎ ÁÙ ÀÌ»ó ÀĞÀ» ¶§¸¦ ´ëºñ
+			    		line.concat(sentence); // ë‘ ì¤„ ì´ìƒ ì½ì„ ë•Œë¥¼ ëŒ€ë¹„
 			    		sentence=in.readLine();
 			    		mode=getMode(sentence);
 			    		
